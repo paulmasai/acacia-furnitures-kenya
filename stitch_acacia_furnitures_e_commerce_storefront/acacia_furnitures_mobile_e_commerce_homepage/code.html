@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f5;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#443f3e", "outline": "#837562", "on-background": "#1e1b19", "on-surface": "#1e1b19", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb955", "inverse-surface": "#33302d", "on-tertiary-fixed": "#1e1b1a", "secondary-container": "#fdb64f", "surface-container": "#f4ece8", "on-secondary": "#ffffff", "on-error-container": "#93000a", "outline-variant": "d5c4af", "on-secondary-fixed-variant": "#633f00", "surface-tint": "#805600", "on-primary-fixed-variant": "#614000", "on-primary-fixed": "#281800", "surface": "#fff8f5", "on-tertiary-fixed-variant": "#4b4644", "inverse-primary": "#ffba44", "tertiary": "#635d5c", "on-surface-variant": "#514535", "tertiary-container": "#b2aba9", "primary-container": "#e2a028", "on-tertiary": "#ffffff", "surface-variant": "#e9e1dd", "on-primary-container": "#593a00", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f7efeb", "on-secondary-fixed": "#2a1800", "secondary": "#835500", "on-error": "#ffffff", "tertiary-fixed": "#e9e1df", "on-secondary-container": "#714800", "primary-fixed": "#ffddaf", "error": "#ba1a1a", "secondary-fixed": "#ffddb5", "surface-container-high": "#eee7e3", "surface-dim": "#e0d8d5", "surface-container-highest": "#e9e1dd", "surface-bright": "#fff8f5", "primary-fixed-dim": "#ffba44", "on-primary": "#ffffff", "surface-container-low": "#faf2ee", "tertiary-fixed-dim": "#cdc5c3", "background": "#fff8f5", "primary": "#805600" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-lg-mobile": ["Montserrat"], "headline-md": ["Montserrat"], "label-lg": ["Montserrat"], "price-md": ["Montserrat"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Montserrat"], "body-lg": ["Inter"], "body-md": ["Inter"], "display-xl-mobile": ["Montserrat"], "price-lg": ["Montserrat"], "display-xl": ["Montserrat"], "headline-sm": ["Montserrat"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "display-xl-mobile": ["38px", { "lineHeight": "44px", "fontWeight": "700" }], "price-lg": ["24px", { "lineHeight": "28px", "fontWeight": "700" }], "display-xl": ["56px", { "lineHeight": "64px", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe"><div class="bg-primary-container text-on-primary-container py-1 px-4 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-1.5 overflow-hidden"><span class="material-symbols-outlined text-sm shrink-0">local_shipping</span><span class="font-label-sm truncate tracking-wide uppercase">Free Nairobi Delivery • M-Pesa Available</span></div><a class="font-label-sm font-semibold tracking-wide flex items-center gap-1 shrink-0" href="tel:+254700123456"><span class="material-symbols-outlined text-sm">phone_in_talk</span><span>+254 700 123 456</span></a></div><div class="h-20 bg-surface/90 backdrop-blur-xl px-gutter-mobile flex items-center justify-between gap-3 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-2"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button><div class="flex items-center gap-2"><span class="font-headline-sm uppercase tracking-tight text-on-surface hidden xs:inline">Acacia</span><span class="font-label-md text-on-surface-variant font-medium tracking-wider uppercase">Home</span></div></div><div class="flex items-center gap-2"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-2xl">search</span></button><a aria-label="Shopping Cart" class="relative w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-2xl">shopping_bag</span><span class="absolute top-2 right-2 w-4 h-4 rounded-full bg-primary-container text-on-primary-container font-label-sm flex items-center justify-center text-[10px] font-bold">3</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1Ulk2A9yHdApcz9SS91R0DSENyB8R_WiAqQPuXYCU0vimhvYwSNZ_0QAhCaU-yRxye-muHvCOjgC2OTEhJEaOxjJvndiJ89GwdQR-JeTqpj-tMps-oGRBr56EPwgA78KsNdqerv--EJm9v4sKa7_AcyJKr4SwUYW1yHIZm-jEpFpr_BLxYGjJHOCWcj_kZJtCXLm9fcm6Fk3RHQjRCfdNGSMrYl2OxLaBPN_cB0Cw7EcKzCqwm5LbUQFddfrabXy1cZ5WOxgfFT7w"/></div></div></header><main class="flex flex-col relative w-full pt-20 bg-surface pb-32"><div class="w-full"><div class="flex flex-col w-full">
+<!-- Top Mobile Search & Quick Bar -->
+<section class="px-margin-mobile pt-space-md pb-space-sm bg-surface">
+<div class="relative w-full">
+<div class="flex items-center w-full h-12 bg-surface-container-lowest rounded-xl px-space-md shadow-sm">
+<span class="material-symbols-outlined text-outline text-xl shrink-0">search</span>
+<input class="w-full bg-transparent px-space-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search chairs, steel safes, desks..." type="text"/>
+<button aria-label="Filters" class="w-8 h-8 flex items-center justify-center text-primary bg-primary/10 rounded-lg shrink-0 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-lg">tune</span>
+</button>
+</div>
+</div>
+<!-- Quick Category Filter Chips (Horizontal Scrollable) -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-space-sm -mx-margin-mobile px-margin-mobile">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md shrink-0 shadow-sm transition-all active:scale-95">All Solutions</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md shrink-0 hover:bg-surface-container-high transition-all active:scale-95">Office Chairs</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md shrink-0 hover:bg-surface-container-high transition-all active:scale-95">Executive Desks</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md shrink-0 hover:bg-surface-container-high transition-all active:scale-95">Steel Cabinets</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md shrink-0 hover:bg-surface-container-high transition-all active:scale-95">Fireproof Safes</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md shrink-0 hover:bg-surface-container-high transition-all active:scale-95">Boardroom</button>
+</div>
+</section>
+<!-- Mobile Hero Section -->
+<section class="px-margin-mobile pt-space-sm pb-space-lg flex flex-col gap-space-md bg-surface">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-sm tracking-wider uppercase">Direct Importer &amp; Manufacturer • Nairobi</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+        Premium Workspace &amp; <span class="text-primary italic font-semibold">Storage Solutions</span>
+</h1>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+        Commercial-grade ergonomic seating, bespoke executive suites, and UL-certified steel vaults delivered directly across East Africa.
+      </p>
+</div>
+<!-- Key Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col items-center text-center p-1">
+<span class="font-price-md text-primary">10K+</span>
+<span class="font-label-sm text-on-surface-variant">Workspaces</span>
+</div>
+<div class="flex flex-col items-center text-center p-1">
+<span class="font-price-md text-primary flex items-center justify-center gap-0.5">
+          4.9<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+<span class="font-label-sm text-on-surface-variant">Top Rated</span>
+</div>
+<div class="flex flex-col items-center text-center p-1">
+<span class="font-price-md text-primary">100%</span>
+<span class="font-label-sm text-on-surface-variant">Commercial</span>
+</div>
+</div>
+<!-- Hero Visual Preview Card -->
+<div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container shadow-md">
+<img class="w-full h-full object-cover" data-alt="Luxurious architectural executive office suite in Nairobi Kenya with natural acacia wood desk, mesh high back executive chair, matte black credenza, floor-to-ceiling city skyline windows, warm ambient morning light, minimal Scandinavian executive aesthetic, warm amber and gold highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqp46-InF2Z2bOEZW62J-bInMSMnAcVzrxzefARShA84g4azaQZqNgkgj-wCyyk6Hb5Ek_iWvzgvvHSQbQX8ystS6DRyxihOLJ5U_LiCM4MEoaz5TJqBEVO1G26uxKqlQyFCHTVh5vuI4KC75Qc0wlDSzkLw_4Q-wqGAQWTULJDYCwQ7ZVSNHHEXoeENua46NIHUtMzj0Fj0tMwcvhF-18l2tZqs6sCyODZpjCkdyJQ0mgBkAG-Hp1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-black/20"></div>
+<!-- Nairobi Showroom Badge -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-xs">location_on</span>
+<span class="font-label-sm text-on-surface font-semibold tracking-wide uppercase">Prestige Suite × Mombasa Rd</span>
+</div>
+<!-- Quick Floating Status -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-md text-surface font-semibold">Architectural Workstation 2025</span>
+<span class="font-label-sm text-surface-container-high opacity-90">In Stock • Immediate Dispatch</span>
+</div>
+<span class="material-symbols-outlined text-primary-fixed text-xl">verified</span>
+</div>
+</div>
+<!-- Dual Mobile CTAs in Thumb Zone -->
+<div class="flex flex-col gap-2.5 pt-space-xs">
+<a class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container transition-all active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-xl">chair</span>
+<span>Shop Office Seating</span>
+</a>
+<a class="w-full h-12 rounded-lg bg-surface-container text-on-surface font-label-lg flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container-high transition-all active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-xl">picture_as_pdf</span>
+<span>Request B2B Catalog (2025 PDF)</span>
+</a>
+</div>
+</section>
+<!-- Value Proposition 2x2 Bento Grid -->
+<section class="px-margin-mobile py-space-md bg-surface-container-low">
+<div class="flex flex-col gap-1 mb-space-md">
+<span class="font-label-sm uppercase tracking-wider text-primary font-semibold">Why Corporate Kenya Chooses Acacia</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Architectural Grade Reliability</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Feature 1 -->
+<div class="p- space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between h-36">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">hardware</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface font-semibold">Heavy-Duty Core</h3>
+<p class="font-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Continuous corporate wear steel &amp; timber joinery</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between h-36">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">local_shipping</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface font-semibold">Same-Day Nairobi</h3>
+<p class="font-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Fast delivery direct from Mombasa Rd hub</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between h-36">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">receipt_long</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface font-semibold">M-Pesa &amp; KRA ETR</h3>
+<p class="font-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Instant business checkout &amp; verified invoicing</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between h-36">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface font-semibold">1-Year Warranty</h3>
+<p class="font-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Nationwide coverage with genuine parts support</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Circle Carousel -->
+<section class="py-space-lg bg-surface">
+<div class="px-margin-mobile flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-primary uppercase tracking-wider font-semibold">Commercial Portfolios</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Explore by Category</h2>
+</div>
+<a class="font-label-sm text-primary font-semibold flex items-center gap-0.5 hover:underline" href="#">
+        All (6) <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Scrolling Carousel -->
+<div class="flex gap-4 overflow-x-auto no-scrollbar px-margin-mobile py-space-xs">
+<!-- Circle 1 -->
+<a class="flex flex-col items-center gap-2 shrink-0 group" href="#">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-sm transition-transform group-active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Ergonomic executive mesh office chair with silver chrome base isolated on clean white architectural backdrop with soft ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcjiZKk5LcyHTWuWfvYLU_sfS9kQiHeAolxfklDkApBL7Q-61N4fWGR2gvbKSZgC6KlgjJ3qU_IQnZ5YBnrh2xgrre_mSXp2U2r-NC3AhCrdJoj7BnMu68gzjlwC5x2epRx_l04FM5Ojq5Z0ECw7WXEdT7hYYxt5NQ7PJU1DGPEmgOqPLTriuDDsebxhJPkbMwdP1ERQPNAgigMtpZtoPqCep9O9QLE4l6_oraQt6OO3bf158M8MOi"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-on-surface font-semibold">Office Chairs</span>
+<span class="font-label-sm text-on-surface-variant text-[10px]">42 Models</span>
+</div>
+</a>
+<!-- Circle 2 -->
+<a class="flex flex-col items-center gap-2 shrink-0 group" href="#">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-sm transition-transform group-active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Solid acacia wood L-shaped corporate executive desk with brushed brass metal accents, minimal design isolated on neutral ivory backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcU7c2CTIHdwnXhLOep0OEm_4aEVe2FCKJdt2EGSCBuZAwIqHqpwaog49tNZkuCoU1MOixVTWmVLNLWsqIXntyiYsktzk-P4MAz4EiiQWKjFBvLN3HCw6CwDMWbnPB2cuE_iWRNASuFZ3ZtxHZ3X76SFzWCiy74d1ygIInL020XZ7_mvJFexo0OcKeoTuuceoT7qCx4rqm32R3kJf50YsOPlRgnagsILUBd6_obYxq1QBAcqvIL4Sb"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-on-surface font-semibold">Executive Desks</span>
+<span class="font-label-sm text-on-surface-variant text-[10px]">28 Designs</span>
+</div>
+</a>
+<!-- Circle 3 -->
+<a class="flex flex-col items-center gap-2 shrink-0 group" href="#">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-sm transition-transform group-active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Heavy-duty 4-drawer steel filing cabinet in matte charcoal industrial finish isolated on modern off-white studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAI9GwxlVjwmr2teSdGhnD5IJQ8mkQYj_utOsBVsqfC2vcfnkLrpR6TihoFNOUF03TqRvBY_KaV6G-sd0N0f3LDlyqnwe8aCX38cAkYScAtTio1VFshMGu4BQbD9r7mkz56hE6LLLbrA3xm5RlmDejG30WZipQmzBGXKFXNegHjeGPGsoWwV2HYZmJLZlJRBYCuRoVkPQNANyNUUvF5nZUgSkPlWWuNX3NXYHeG_gly6NYEifxQmp6"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-on-surface font-semibold">Steel Cabinets</span>
+<span class="font-label-sm text-on-surface-variant text-[10px]">19 Configs</span>
+</div>
+</a>
+<!-- Circle 4 -->
+<a class="flex flex-col items-center gap-2 shrink-0 group" href="#">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-sm transition-transform group-active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Heavy reinforced commercial fireproof steel safe box with digital electronic keypad and polished chrome handle on warm minimal backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG4_i9HMA0G4di4phV6RdLg3egupDzt43PHD8-9oc2ALKgJ_B96KrvtxBUYOBa6w4_IZgXS3nJOGlzHScWRiPhkvGUllW-4466483PoIRz4VdZQEbTXv1v_S_AToVHvEcS5nwE8wRyKjx_diic3HMxovM2tmNK7vRlVClxt5xZvxduJG9P19LWxVR8ptrnsnMW85R_-uaylbDQZJWE53ksHkxTZMJJbYbrHtVsfT2PlrMq2XwrY3Xr"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-on-surface font-semibold">Steel Safes</span>
+<span class="font-label-sm text-on-surface-variant text-[10px]">UL Fire-Rated</span>
+</div>
+</a>
+<!-- Circle 5 -->
+<a class="flex flex-col items-center gap-2 shrink-0 group" href="#">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-sm transition-transform group-active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Long hardwood executive boardroom table with integrated power grommets and cable management for conference rooms in Kenya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlF76NOyGpEmaP3dGW11oh39K4BgbinHm2ndwdTQPg_zQuqDprtVSh4i4TSEErV3gxeaTpR9BjpsXuUqMMeQXmLVDnO05c7W8PwVFlj232ehmTaStnY2KwDh0a0t22pAqolNJoLFWKvpyyV_LbEUNEGHn0MMpnsGLf9ssu1QeNJOf7ZED-f3cAUm_a2OciJRhFGQ6voFFaRtJL5P8FrIt8rIIjsRKgV6P8UwMMF__JR4PI-LzFF2qZ"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-on-surface font-semibold">Boardroom</span>
+<span class="font-label-sm text-on-surface-variant text-[10px]">Hardwood Series</span>
+</div>
+</a>
+<!-- Circle 6 -->
+<a class="flex flex-col items-center gap-2 shrink-0 group" href="#">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-sm transition-transform group-active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Architectural space planning and custom office corporate turnkey fitout installation in high-end Nairobi commercial tower" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHuGmGxy6PvupDoFLBG2o_ZQfH_vaWDJkgnXieL4esu1EAbnlk57941oDEKE6wLCmPvF2n9S2IDphmM3FjjujgRU9NkIlWxIBmN3ALAKDjOYaS-BiWWKM6-Ft_jpZA76WVGTJaKfdyZ9swTxMK1dnFTLDKC1EzmdQTFL6yePeyj8BnpIw4KJ_nJIeAa8dFFUnReHPy3vnqICh2zPwWtcBv-nQgGbnfZbaUTJGP3IjJjtjQz6najg5E"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-on-surface font-semibold">Fit-Outs</span>
+<span class="font-label-sm text-on-surface-variant text-[10px]">Turnkey B2B</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Bestsellers Product Cards (Mobile Optimized Single Stack) -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-primary uppercase tracking-wider font-semibold">Proven Commercial Grade</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bestselling Hardware</h2>
+</div>
+<span class="font-label-sm text-on-surface-variant">In Stock Nairobi</span>
+</div>
+<!-- Product 1: Executive High-Back Mesh Chair -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md">
+<div class="relative w-full h-52 bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-back ergonomic executive office chair with high density breathable Korean mesh backrest, lumbar spine support cushion, 3D adjustable armrests, heavy chrome star base in bright showroom lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArmJvYQ0_RHyBjFWiTggC1LSew7NFVhBtHWi8VecSYIvWF6KNXfGfsMl7AlInaZIhaVMxjS_1iCYz5EvBunjBmaJQTrYvzvh2QBBVr1F_8FWft8NfhtqFe_RolwMTkWii21HGP4C54ajSqVHTEHvj0U5jBSgD8Q_eRLbW_noeLPPrqZxT3xFWdZ9ZYLjI00WQ4H_fbxcrUT1UDlFSuo4SCL8lw4EAKoUk5sRR2j2lXC8DsU-eL52I8"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm uppercase font-bold tracking-wider">
+          BESTSELLER
+        </div>
+<button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface active:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-outline uppercase tracking-wider">Ergonomic Seating</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-on-surface font-semibold">4.9</span>
+<span class="font-label-sm text-on-surface-variant text-[11px]">(184)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Executive High-Back Mesh Chair</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+          Dynamic lumbar contour, Korean breathable mesh, pneumatic height lift, synchronized recline, and heavy-duty 5-star chrome base.
+        </p>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline line-through text-[11px]">KSh 22,000</span>
+<span class="font-price-lg text-price-lg text-primary">KSh 18,500</span>
+</div>
+<span class="font-label-sm px-2 py-0.5 bg-surface-container rounded text-on-surface-variant">Tax Inc. (ETR)</span>
+</div>
+</div>
+<!-- Action: Order via WhatsApp -->
+<a class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]" href="https://wa.me/254700123456?text=Hi%20Acacia%20Furnitures,%20I%20would%20like%20to%20order%20the%20Executive%20High-Back%20Mesh%20Chair%20(KSh%2018,500)." target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Order via WhatsApp Direct</span>
+</a>
+</div>
+<!-- Product 2: 4-Drawer Heavy Duty Steel Filing Cabinet -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md">
+<div class="relative w-full h-52 bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Commercial 4-drawer vertical steel filing cabinet in textured dark graphite grey with precision recessed handles, central key lock, anti-tilt mechanism on light minimal floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNMr9AKyMSoWbj46xkAgXR7ePlDubT9wvZbCvysljJ0VTs7IFcyjgzZdPjh8ftEpKVuoT7LTmB6P1_LDFdu7sThQ0mHZwSYewWqVR46e66kn1SMljn8bRnWwl3tSDOcIUFRTlWaUYZ8F4lBUonf-9KvJxjwajLvz8MyqD7q0eGM2TS2Ze8qhylkEURv_lViNUIijhsLopFvShNgNpaYc-vhbDl39KZkU2AgzxOnRNkm0EAT4pH3IoW"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-surface-tint text-on-primary font-label-sm uppercase font-bold tracking-wider">
+          HEAVY DUTY
+        </div>
+<button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface active:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-outline uppercase tracking-wider">Document Security</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-on-surface font-semibold">4.8</span>
+<span class="font-label-sm text-on-surface-variant text-[11px]">(92)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">4-Drawer Steel Filing Cabinet</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+          0.8mm cold-rolled heavy-gauge steel, central dual-master interlocking system, ball-bearing slide runners, and electrostatic powder finish.
+        </p>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline line-through text-[11px]">KSh 25,500</span>
+<span class="font-price-lg text-price-lg text-primary">KSh 22,000</span>
+</div>
+<span class="font-label-sm px-2 py-0.5 bg-surface-container rounded text-on-surface-variant">Fully Assembled</span>
+</div>
+</div>
+<a class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]" href="https://wa.me/254700123456?text=Hi%20Acacia%20Furnitures,%20inquiry%20for%204-Drawer%20Steel%20Filing%20Cabinet%20(KSh%2022,000)." target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Order via WhatsApp Direct</span>
+</a>
+</div>
+<!-- Product 3: Digital Fireproof Steel Safe Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md">
+<div class="relative w-full h-52 bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Digital electronic fireproof commercial security safe box with illuminated LCD keypad, dual high tensile steel deadbolts, emergency key override, matte charcoal finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazqiSReQojwly2DnL20srVFGCLJ36C0zGHSl-3vDq0-wY61_7S4ScOyDUm7OsfPAndDF20QW6K_5OMdZYvT9xtOkcRHPjcr66VHvPm1AOKrGAmaY5ObhkAJAvDjLua0JCrmULxvh6YqTM-OX2GjyGxcpjJ4TUY9uiHasV5b0kFFRRtICt2Ig7hkDFB04pG3QoPwFP3oJ1whqdEFfmh6CA_1mmpS8JIx76nfeCNIs0U73KlqTjShjE"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm uppercase font-bold tracking-wider">
+          FIRE-RATED
+        </div>
+<button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface active:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-outline uppercase tracking-wider">Vault &amp; Safekeeping</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-on-surface font-semibold">5.0</span>
+<span class="font-label-sm text-on-surface-variant text-[11px]">(210)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Digital Fireproof Steel Safe Box</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+          1-hour UL Class 350 fire-resistance rating, tamper alarm, dual 22mm solid locking bolts, and anchor kit included.
+        </p>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline line-through text-[11px]">KSh 42,000</span>
+<span class="font-price-lg text-price-lg text-primary">KSh 35,000</span>
+</div>
+<span class="font-label-sm px-2 py-0.5 bg-surface-container rounded text-on-surface-variant">Wells Fargo Delivery</span>
+</div>
+</div>
+<a class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]" href="https://wa.me/254700123456?text=Hi%20Acacia%20Furnitures,%20I%20am%20interested%20in%20the%20Digital%20Fireproof%20Steel%20Safe%20Box%20(KSh%2035,000)." target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Order via WhatsApp Direct</span>
+</a>
+</div>
+<!-- Product 4: L-Shaped Executive Desk -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md">
+<div class="relative w-full h-52 bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="L-shaped Scandinavian executive corporate desk with treated natural acacia hardwood top, matte black architectural legs, lockable return cabinet with side storage and wire duct" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7iBd_W3SeQIJ33abLGtv7eRyy6qGpdOfIhdlsCb9SczZq6FHHKuKZcNrdo3Ks6tI8nCqBJG0rhhSF1Dk2JYJ9lmujtT0eeowJ90501CF1rJHMY5jcO-QxOaZ69UTPxa7l_l-ObPQl2WrVeaLN0-J9e08HwkVr0ZzvsfxOuhMqAKTzMaXPXrCkCuUYd_t9f5hsEn_deSbo89j2SuryFwOGdj4jgmRnVty_FFraFLXsHULHk3LkFoep"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm uppercase font-bold tracking-wider">
+          EXECUTIVE
+        </div>
+<button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface active:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-outline uppercase tracking-wider">Executive Suites</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-on-surface font-semibold">4.9</span>
+<span class="font-label-sm text-on-surface-variant text-[11px]">(67)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">L-Shaped 1800mm Executive Desk</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+          Premium scratch-resistant finish, privacy modesty panel, 3-drawer locking credenza, and brushed aluminum grommets.
+        </p>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline line-through text-[11px]">KSh 52,000</span>
+<span class="font-price-lg text-price-lg text-primary">KSh 45,000</span>
+</div>
+<span class="font-label-sm px-2 py-0.5 bg-surface-container rounded text-on-surface-variant">Free Nairobi Assembly</span>
+</div>
+</div>
+<a class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]" href="https://wa.me/254700123456?text=Hi%20Acacia%20Furnitures,%20booking%20an%20order%20for%20the%20L-Shaped%20Executive%20Desk%20(KSh%2045,000)." target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Order via WhatsApp Direct</span>
+</a>
+</div>
+</section>
+<!-- Corporate Procurement & Fit-Out Banner (Mobile Callout) -->
+<section class="px-margin-mobile py-space-lg bg-surface">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-space-lg flex flex-col gap-space-md shadow-xl relative overflow-hidden">
+<!-- Decorative Acacia Leaf / Geometric Pattern Backing -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary/10 pointer-events-none"></div>
+<div class="flex flex-col gap-1 relative z-10">
+<div class="flex items-center gap-1.5 text-primary-fixed">
+<span class="material-symbols-outlined text-lg">corporate_fare</span>
+<span class="font-label-sm uppercase tracking-widest font-semibold">Corporate Facilities &amp; B2B</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-surface tracking-tight">
+          Furnishing an Entire Floor or Headquarters?
+        </h2>
+<p class="font-body-sm text-surface-container-high leading-relaxed mt-1">
+          We handle turnkey workspace projects from architectural layout CAD drafting to synchronized weekend logistics across East Africa.
+        </p>
+</div>
+<!-- Feature Badges -->
+<div class="flex flex-col gap-2 relative z-10">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary-fixed text-base">check_circle</span>
+<span class="font-body-sm text-surface font-medium">Direct KRA ETR Invoicing &amp; Credit Terms for Corporates</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary-fixed text-base">check_circle</span>
+<span class="font-body-sm text-surface font-medium">Volume Tiered Price Schedules (Save 15% - 30%)</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary-fixed text-base">check_circle</span>
+<span class="font-body-sm text-surface font-medium">Dedicated Corporate Facilities Project Manager</span>
+</div>
+</div>
+<!-- Callout Action Buttons -->
+<div class="flex flex-col gap-2 pt-space-xs relative z-10">
+<a class="w-full h-12 rounded-lg bg-primary-container text-on-primary-container font-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform font-bold" href="#">
+<span class="material-symbols-outlined text-xl">space_dashboard</span>
+<span>Request Fit-Out Consultation</span>
+</a>
+<a class="w-full h-12 rounded-lg bg-surface/10 text-surface font-label-lg flex items-center justify-center gap-2 hover:bg-surface/20 active:scale-[0.98] transition-colors" href="tel:+254700123456">
+<span class="material-symbols-outlined text-xl">call</span>
+<span>Call Corporate Desk: +254 700 123 456</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Nairobi Experience Showrooms -->
+<section class="px-margin-mobile py-space-md bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-primary uppercase tracking-wider font-semibold">Touch &amp; Feel Quality</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Visit Our Nairobi Showrooms</h2>
+</div>
+<!-- Showroom 1: Mombasa Road -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-xl">storefront</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[17px]">Mombasa Road Main Showroom</h3>
+</div>
+<span class="font-body-sm text-on-surface-variant text-[12px] mt-0.5">Enterprise Plaza, Unit B2, Mombasa Road</span>
+</div>
+<span class="px-2 py-0.5 bg-primary-fixed/50 text-on-primary-fixed font-label-sm rounded uppercase text-[10px] font-bold shrink-0">HQ HUB</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-space-sm rounded-lg text-on-surface-variant font-body-sm text-xs">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Mon - Sat: 8:00 AM – 6:00 PM</span>
+</div>
+<span class="text-primary font-semibold">Open Today</span>
+</div>
+<a class="w-full h-11 rounded-lg bg-surface-container text-on-surface font-label-md flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" href="https://maps.google.com/?q=Mombasa+Road+Nairobi" target="_blank">
+<span class="material-symbols-outlined text-lg text-primary">directions</span>
+<span>Get Directions (GPS Mombasa Rd)</span>
+</a>
+</div>
+<!-- Showroom 2: Westlands Studio -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-xl">business_center</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[17px]">Westlands Corporate Studio</h3>
+</div>
+<span class="font-body-sm text-on-surface-variant text-[12px] mt-0.5">Woodvale Grove, 4th Floor, Westlands</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-label-sm rounded uppercase text-[10px] font-bold shrink-0">BY APPT</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-space-sm rounded-lg text-on-surface-variant font-body-sm text-xs">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">person_pin</span>
+<span>Architect &amp; Designer Consultations</span>
+</div>
+<span class="text-primary font-semibold">Reserve Slot</span>
+</div>
+<a class="w-full h-11 rounded-lg bg-surface-container text-on-surface font-label-md flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" href="tel:+254700123456">
+<span class="material-symbols-outlined text-lg text-primary">calendar_month</span>
+<span>Book Westlands Viewing</span>
+</a>
+</div>
+<!-- Kenyan Institutional Trust Badges Strip -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-label-sm text-outline uppercase tracking-wider text-center font-semibold">Official Kenya Logistics &amp; Payment Partners</span>
+<div class="grid grid-cols-4 gap-2 text-center">
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">payments</span>
+<span class="font-label-sm text-on-surface font-bold text-[10px] mt-1">Lipa na M-Pesa</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">shield</span>
+<span class="font-label-sm text-on-surface font-bold text-[10px] mt-1">G4S Secure</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">local_shipping</span>
+<span class="font-label-sm text-on-surface font-bold text-[10px] mt-1">Wells Fargo</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">fact_check</span>
+<span class="font-label-sm text-on-surface font-bold text-[10px] mt-1">KRA Compliant</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Testimonial Snippet -->
+<section class="px-margin-mobile py-space-lg bg-surface">
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface italic leading-relaxed">
+        “Acacia furnished our 3-floor regional FinTech hub in Upper Hill in just 4 days. The build quality of the executive desks and fireproof cabinets surpassed European imports we had previously evaluated.”
+      </p>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold font-label-md">
+          NM
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface font-bold">Nigel M.</span>
+<span class="font-label-sm text-on-surface-variant text-[11px]">Head of Facilities &amp; Procurement • Nairobi</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile Quick Action Floating WhatsApp Bar (Anchored in Viewport) -->
+<div class="sticky bottom-16 z-40 px-margin-mobile pb-space-sm pt-space-xs pointer-events-none">
+<a class="pointer-events-auto flex items-center justify-between bg-inverse-surface text-surface py-2.5 px-4 rounded-xl shadow-2xl transition-transform active:scale-95" href="https://wa.me/254700123456?text=Hello%20Acacia%20Furnitures,%20I%20have%20an%20inquiry%20regarding%20commercial%20workspace%20furniture.">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-base">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-surface font-semibold text-xs">Chat with Furniture Specialist</span>
+<span class="font-label-sm text-primary-fixed text-[10px]">Instant quotes &amp; Nairobi stock availability</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-fixed text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for active filter buttons
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('section:first-of-type button');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        if (!btn.getAttribute('aria-label')) {
+          filterButtons.forEach(b => {
+            if (!b.getAttribute('aria-label')) {
+              b.className = 'px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md shrink-0 hover:bg-surface-container-high transition-all active:scale-95';
+            }
+          });
+          btn.className = 'px-4 py-2 rounded-full bg-primary text-on-primary font-label-md shrink-0 shadow-sm transition-all active:scale-95';
+        }
+      });
+    });
+  });
+</script></div><footer class="w-full mt-space-xl bg-surface-container-low px-margin-mobile py-space-xl"><div class="flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-headline-sm uppercase text-on-surface tracking-tight">Acacia Furnitures</span><p class="font-body-sm text-on-surface-variant">Architectural &amp; Corporate Workspace Solutions Kenya</p></div><div class="flex flex-col gap-space-xs bg-surface-container p-space-md rounded-lg"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xl">storefront</span><span class="font-label-md uppercase tracking-wider text-on-surface">Showroom &amp; Logistics</span></div><p class="font-body-sm text-on-surface-variant">Mombasa Road Business Park, Block C, Nairobi, Kenya</p><div class="flex items-center justify-between pt-space-xs"><span class="font-label-sm text-on-surface-variant uppercase tracking-wider">M-Pesa Buy Goods Till</span><span class="font-price-md text-primary font-bold tracking-wide">892 4110</span></div></div><div class="flex flex-wrap gap-x-space-lg gap-y-space-sm pt-space-xs"><a class="font-label-md text-on-surface-variant hover:text-on-surface" data-path="showroom" href="#">Showroom Visit</a><a class="font-label-md text-on-surface-variant hover:text-on-surface" data-path="catalog" href="#">Corporate Catalog</a><a class="font-label-md text-on-surface-variant hover:text-on-surface" data-path="b2b-inquiry" href="#">Volume RFQ</a><a class="font-label-md text-on-surface-variant hover:text-on-surface" data-path="logistics" href="#">Nationwide Delivery</a></div><div class="pt-space-md flex flex-col gap-space-xs"><p class="font-label-sm text-on-surface-variant">© 2024 Acacia Furnitures Kenya. Handcrafted in East Africa.</p></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-2xl">storefront</span><span class="font-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-2xl">grid_view</span><span class="font-label-sm">Categories</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="whatsapp-order" href="#"><span class="material-symbols-outlined text-2xl">chat</span><span class="font-label-sm">WhatsApp</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-2xl">shopping_cart</span><span class="font-label-sm">Cart</span></a></div></nav></body></html>
