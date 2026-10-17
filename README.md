@@ -18,7 +18,12 @@ Next.js App Router storefront, statically exported for **Cloudflare Pages**. No 
 - `public/catalog/` contains the production images, with supplied filenames and category directories preserved.
 - `public/brand/` contains the supplied logo and favicon.
 
-Images work without external services. To use a public Supabase bucket, upload the same directory structure and set `NEXT_PUBLIC_CATALOG_MEDIA_URL` to its public base URL before building. No service-role key belongs in the frontend.
+Images work without external services. For Supabase CDN delivery:
+
+1. Put credentials in `.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`).
+2. Run `npm run catalog:upload` to create public `catalog` / `brand` buckets and upsert `public/catalog` + `public/brand`.
+3. Set `NEXT_PUBLIC_CATALOG_MEDIA_URL` to `https://<project>.supabase.co/storage/v1/object/public/catalog` before `npm run build` / deploy.
+4. Mirror the three `NEXT_PUBLIC_*` values as GitHub Actions secrets (and Cloudflare Pages env) so CI builds bake the CDN URL. Never put the service-role key in frontend or Actions public logs.
 
 The source catalog requests confirmation of live stock and some specifications. The storefront preserves that uncertainty, displays per-item prices, and does not invent ratings, reviews, fire certifications or inventory counts. Photographs of alternative finishes are gallery images, not independently priced variants. The quote bag stores only SKU identifiers and quantities in the visitor's local storage; prices are always read from the current catalog.
 

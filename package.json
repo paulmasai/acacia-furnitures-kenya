@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && wrangler pages deploy out --project-name=acacia-furniture-kenya"
+    "deploy": "next build && wrangler pages deploy out --project-name=acacia-furniture-kenya",
+    "catalog:upload": "node scripts/upload-catalog-to-supabase.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.48.1",
