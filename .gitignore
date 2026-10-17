@@ -34,3 +34,10 @@ wrangler.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local browser verification artifacts
+/output/playwright/
+/.playwright-cli/
+
+# Source media drop (production copies live under public/)
+/data drop/

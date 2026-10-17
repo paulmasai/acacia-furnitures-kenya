@@ -1,45 +1,34 @@
-import type { Metadata } from 'next';
-import { Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import "./globals.css";
 
-const serifFont = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-serif',
-  display: 'swap',
+const serifFont = localFont({
+  src: "./fonts/playfair-display-latin.woff2",
+  weight: "400 900",
+  variable: "--font-serif",
+  display: "swap",
 });
 
-const sansFont = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
+const sansFont = localFont({
+  src: "./fonts/plus-jakarta-sans-latin.woff2",
+  weight: "200 800",
+  variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'Acacia Furniture Kenya | Handcrafted Solid Acacia Hardwood in Nairobi',
+  title: "Acacia Furniture Kenya | Office Furniture & Event Seating",
   description:
-    'Luxury handcrafted solid Kenyan Acacia hardwood furniture. Explore live-edge dining tables, platform beds, executive desks, and custom slabs. Karen & Westlands Showrooms.',
-  keywords: [
-    'Acacia furniture Kenya',
-    'live edge dining table Nairobi',
-    'solid hardwood furniture Kenya',
-    'handcrafted furniture Nairobi',
-    'Karen furniture showroom',
-    'Kenyan acacia wood slabs',
-    'custom timber furniture Kenya',
-  ],
-  authors: [{ name: 'Acacia Furniture Kenya' }],
+    "Explore office chairs, executive desks, event seating and digital safes. Browse 17 models with prices in KSh and request a quote from our Nairobi team.",
   openGraph: {
-    title: 'Acacia Furniture Kenya | Solid Hardwood Heirloom Furniture',
+    title: "Acacia Furniture Kenya | Good furniture. Better everyday spaces.",
     description:
-      'Handcrafted in Nairobi using 100% solid, kiln-dried Kenyan Acacia. Experience live-edge tables, bespoke consoles, and luxury bedroom pieces.',
-    url: 'https://acaciafurniture.co.ke',
-    siteName: 'Acacia Furniture Kenya',
-    locale: 'en_KE',
-    type: 'website',
+      "Office furniture, event seating and digital safes. Explore our Nairobi collection and request a personalised quotation.",
+    siteName: "Acacia Furniture Kenya",
+    locale: "en_KE",
+    type: "website",
   },
-  icons: {
-    icon: '/favicon.ico',
-  },
+  icons: { icon: "/brand/favicon.jpeg", apple: "/brand/favicon.jpeg" },
 };
 
 export default function RootLayout({
@@ -48,10 +37,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${serifFont.variable} ${sansFont.variable} scroll-smooth`}>
-      <body className="font-sans antialiased bg-[#faf7f2] text-acacia-950 selection:bg-acacia-300 selection:text-acacia-950">
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${serifFont.variable} ${sansFont.variable} scroll-smooth`}
+    >
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
